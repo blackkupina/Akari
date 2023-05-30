@@ -1,0 +1,428 @@
+/* Title section */
+#title {
+  background-image: url(slike/braon-konci.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: first baseline;
+  justify-content: center;
+
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+}
+
+h1 {
+  font-family: Montserrat-Black, sans-serif;
+  line-height: 1.5;
+  color: #C4BAA6;
+}
+
+.btn {
+  color: #C4BAA6;
+}
+
+/* Container */
+.container-fluid {
+  padding: 3% 15%;
+}
+
+/* Navigation bar */
+.navbar {
+  padding-bottom: 4rem;
+}
+
+.navbar-brand {
+  font-family: Ubuntu, sans-serif;
+  font-size: 2rem;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.nav-link {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+}
+
+/* Download buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.title-image {
+  width: 60%;
+  position: relative;
+  left: 30%;
+}
+
+/* Features section */
+#features {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 100%;
+}
+
+.header-left {
+  background-color: #1B201E;
+  color: #C4BAA6;
+  background-clip: padding-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 50%;
+}
+
+.header-right {
+  background-color: #1B201E;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.header-right img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .header-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+
+
+
+
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.icon {
+  color: #E1EACD;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #BAD8B6;
+}
+
+.feature-p {
+  color: #393939;
+}
+
+/* Testimonials section */
+#testimonials {
+  text-align: center;
+  background-color: #C4BAA6;
+  color: #1B201E;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-content {
+  padding: 40px 0;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Press*/
+
+#press {
+  text-align: center;
+  background-color: #1B201E;
+  color: #C4BAA6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-content {
+  padding: 40px 0;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  background-color: #1B201E;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+/* Pricing Section */
+#pricing {
+  padding: 20px;
+  text-align: center;
+  background-image: url(slike/vez.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-column {
+  width: 33.33%;
+  padding-top: 250px;
+  padding-right: 20px;
+}
+
+.right-column {
+  width: 66.67%;
+  padding-top: 250px;
+  padding-left: 20px;
+}
+
+.left-column h1,
+.left-column p {
+  text-align: left;
+  color: #C4BAA6;
+  width: 100%;
+}
+
+.right-column h2,
+.right-column p {
+  text-align: left;
+  color: #C4BAA6;
+  padding-left: 400px;
+}
+
+.right-content {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1028px) {
+  #pricing {
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .left-column h1,
+  .left-column p,
+  .right-column h2,
+  .right-column p {
+    text-align: center;
+  }
+}
+
+
+/* Call to action section */
+#cta {
+  background-color: #1B201E;
+  text-align: center;
+  color: #C4BAA6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-title {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+}
+
+.icon-container i {
+  margin-bottom: 20px;
+  width: 30px;
+}
+
+.icon-container p {
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/*Pitanja*/
+
+#pitanja {
+  background-image: url(slike/sareni-konci.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+
+}
+
+#pitanja h1 {
+  padding: 10px 50px 0;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.left-colu,
+.middle-colu,
+.right-colu {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  text-align: left;
+  color: #C4BAA6;
+
+}
+
+.left-colu h2,
+.middle-colu h2,
+.right-colu h2 {
+  color: #C4BAA6;
+}
+
+
+
+/*Footer*/
+#footer {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.header-grid-drugi {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 100%;
+  width: 100%;
+
+}
+
+.header-left-drugi {
+  background-color: #1B201E;
+  display: flex;
+}
+
+.header-right-drugi {
+  background-color: #1B201E;
+  color: #C4BAA6;
+  background-clip: padding-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-left-drugi img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+.border {
+  border: 1px solid #C4BAA6;
+  padding: 1px;
+  margin: 10%;
+}
+
+
+@media screen and (max-width: 767px) {
+  .footer-grid {
+    grid-template-columns: 100%;
+  }
+}
